@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <style>
+        body {
+            margin: 0;
+            padding-top: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f4ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #4a4e69;
+        }
+        
+        h2 {
+            color: #4a4e69;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 300px;
+            gap: 15px;
+        }
+        
+        button {
+            border: 3px solid #a0e7e5;
+            border-radius: 8px;
+            background-color: #e2f0fd;
+            padding: 12px 24px;
+            font-size: 16px;
+            color: #4a4e69;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-weight: 500;
+        }
+        
+        button:hover {
+            background-color: #d1e5f7;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h2>Добро пожаловать!</h2>
+    <div class="button-container">
+        <button onclick="window.location.href='login.php'">Войти</button>
+        <button onclick="window.location.href='newindex.php'">Зарегистрироваться</button>
+    </div>
+</body>
+</html>
